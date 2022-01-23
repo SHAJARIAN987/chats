@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <form id="chat">
+            <input id="text" type="text">
+            <div class="mo">
+                <p class="demo" onclick="F1()">Enter</p>
+            </div>
+        </form>
+        <p id="ChatText"> </p>
+        <script>
+            function F1(){
+                var e=(document.getElementById("ChatText").innerHTML)+(document.getElementById("chat").elements[0].value);
+                document.getElementById("ChatText").innerHTML=e;
+            }
+        </script>
+    </body>
+</html>
